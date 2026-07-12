@@ -1,0 +1,713 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ansa Ismail | Cybersecurity Specialist & Software Developer</title>
+    <meta name="description" content="Portfolio of Ansa Ismail - Cybersecurity Undergraduate, Java & Python Programmer, and Future Security Analyst. Exploring ethical hacking, secure programming, and security analysis.">
+    <meta name="keywords" content="Ansa Ismail, Cybersecurity, Portfolio, Java Developer, Python Programmer, Security Analyst, Ethical Hacking, Lahore, UET Lahore">
+    <meta name="author" content="Ansa Ismail">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Ansa Ismail | Cybersecurity Specialist & Developer">
+    <meta property="og:description" content="Cybersecurity Undergraduate & Software Developer preparing for a career in security analysis, penetration testing, and threat intelligence.">
+    <meta property="og:image" content="assets/cyber_illustration.png">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Code:wght@400;500;600&family=Outfit:wght@300;400;500;600;700;800&family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    
+    <!-- Lucide Icons CDN -->
+    <script src="https://unpkg.com/lucide@latest"></script>
+
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+    <!-- Particle Background Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Mouse Glow Effect -->
+    <div id="cursor-glow"></div>
+
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress-container">
+        <div id="scroll-progress-bar"></div>
+    </div>
+
+    <!-- Floating Navigation Bar -->
+    <header class="floating-header">
+        <nav class="nav-container">
+            <a href="#" class="logo">
+                <span class="logo-accent">&lt;</span>Ansa.Ismail<span class="logo-accent"> /&gt;</span>
+            </a>
+            
+            <div class="nav-menu" id="nav-menu">
+                <a href="#about" class="nav-link active">About</a>
+                <a href="#skills" class="nav-link">Skills</a>
+                <a href="#timeline" class="nav-link">Timeline</a>
+                <a href="#projects" class="nav-link">Projects</a>
+                <a href="#goals" class="nav-link">Goals</a>
+                <a href="#contact" class="nav-link contact-btn">Get In Touch</a>
+            </div>
+
+            <button class="mobile-toggle" aria-label="Toggle navigation menu" id="mobile-toggle">
+                <i data-lucide="menu"></i>
+            </button>
+        </nav>
+    </header>
+
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="container hero-container">
+                <div class="hero-content">
+                    <div class="cyber-badge-wrapper">
+                        <span class="cyber-badge"><i data-lucide="shield-check" class="badge-icon"></i> Security Analyst In Training</span>
+                    </div>
+                    <h1 class="hero-title">Ansa Ismail</h1>
+                    <h2 class="hero-subtitle">
+                        <span class="typing-prefix">I am a </span><span id="typing-text"></span><span class="cursor">|</span>
+                    </h2>
+                    <p class="hero-description">
+                        Passionate cybersecurity undergraduate with strong programming foundations in Java, Python, and MySQL. Experienced in social media management and sales, combining technical expertise with excellent communication skills. Currently pursuing a BS in Cybersecurity while building projects that solve real-world problems and preparing for a career in cybersecurity.
+                    </p>
+                    <div class="hero-actions">
+                        <a href="#projects" class="btn btn-primary"><i data-lucide="code-2"></i> View Projects</a>
+                        <a href="assets/Ansa_Ismail_CV.pdf" download class="btn btn-secondary"><i data-lucide="download"></i> Download CV</a>
+                    </div>
+                    <div class="hero-socials">
+                        <a href="https://linkedin.com/in/ansa-i-ba066624b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="social-link" title="LinkedIn">
+                            <i data-lucide="linkedin"></i>
+                        </a>
+                        <a href="https://github.com/ansaismail" target="_blank" rel="noopener noreferrer" class="social-link" title="GitHub">
+                            <i data-lucide="github"></i>
+                        </a>
+                        <a href="mailto:ansaismail00@gmail.com" class="social-link" title="Email">
+                            <i data-lucide="mail"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-visual">
+                    <div class="visual-wrapper">
+                        <div class="glow-underlay"></div>
+                        <img src="assets/cyber_illustration.png" alt="Cybersecurity Illustration" class="illustration-img">
+                        <div class="radar-scan"></div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- About Me Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">01 // Identity</span>
+                    <h2 class="section-title">About Me</h2>
+                    <div class="title-line"></div>
+                </div>
+                
+                <div class="about-grid">
+                    <div class="about-story">
+                        <h3 class="story-title">Bridging Code and Security</h3>
+                        <p>
+                            I am currently pursuing a **BS in Cybersecurity** at the **University of Engineering & Technology Lahore (UET)**. My fascination with technology goes beyond building software—I am driven to understand how it can be secured, analyzed, and defended against modern digital threats.
+                        </p>
+                        <p>
+                            Throughout my academic journey, I have maintained a strong commitment to excellence. I was awarded a **100% academic scholarship** during my A-Levels at LGS Paragon, which reinforced my analytical mindset, dedication to hard work, and technical curiosity.
+                        </p>
+                        <p>
+                            I enjoy solving complex logical puzzles, whether that means implementing Object-Oriented Programming principles in Java, scripting secure utilities in Python, or designing robust database schemas in MySQL. Alongside these technical skills, my professional experience in customer engagement and management has equipped me with strong communication, team coordination, and leadership skills. I am actively seeking internships and entry-level opportunities to contribute to dynamic security teams.
+                        </p>
+                    </div>
+
+                    <div class="about-cards">
+                        <div class="stat-card">
+                            <div class="stat-icon"><i data-lucide="graduation-cap"></i></div>
+                            <div class="stat-info">
+                                <h4>BS Cybersecurity</h4>
+                                <p>UET Lahore • 2nd Semester</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i data-lucide="award"></i></div>
+                            <div class="stat-info">
+                                <h4>A-Level Scholarship</h4>
+                                <p>100% Merit Academic Award</p>
+                            </div>
+                        </div>
+                        <div class="stat-card">
+                            <div class="stat-icon"><i data-lucide="target"></i></div>
+                            <div class="stat-info">
+                                <h4>Active Pursuit</h4>
+                                <p>Ethical Hacking & Secure Dev</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">02 // Capabilities</span>
+                    <h2 class="section-title">Skills & Expertise</h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <!-- Programming Skills -->
+                    <div class="skill-category-card">
+                        <div class="card-header-icon"><i data-lucide="terminal"></i></div>
+                        <h3>Programming</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Java (OOP, Logic)</span><span>85%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Python (Scripting)</span><span>80%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>MySQL (RDBMS)</span><span>75%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Cybersecurity Skills -->
+                    <div class="skill-category-card">
+                        <div class="card-header-icon"><i data-lucide="shield"></i></div>
+                        <h3>Cybersecurity</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Security Fundamentals</span><span>80%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Encryption & Cryptography</span><span>75%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 75%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Password Security</span><span>85%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Secure Programming</span><span>70%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 70%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Professional Skills -->
+                    <div class="skill-category-card">
+                        <div class="card-header-icon"><i data-lucide="users"></i></div>
+                        <h3>Professional</h3>
+                        <div class="skill-items">
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Team Coordination</span><span>90%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Sales & Customer Service</span><span>85%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 85%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Social Media Management</span><span>80%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 80%"></div></div>
+                            </div>
+                            <div class="skill-item">
+                                <div class="skill-info"><span>Communication</span><span>90%</span></div>
+                                <div class="skill-bar"><div class="skill-progress" style="width: 90%"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Languages -->
+                    <div class="skill-category-card">
+                        <div class="card-header-icon"><i data-lucide="languages"></i></div>
+                        <h3>Languages</h3>
+                        <div class="languages-container">
+                            <div class="lang-badge">
+                                <span class="lang-name">English</span>
+                                <span class="lang-level">Professional</span>
+                            </div>
+                            <div class="lang-badge">
+                                <span class="lang-name">Urdu</span>
+                                <span class="lang-level">Native</span>
+                            </div>
+                            <div class="lang-badge">
+                                <span class="lang-name">German</span>
+                                <span class="lang-level">Beginner</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Timeline (Education & Experience) -->
+        <section id="timeline" class="timeline-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">03 // Background</span>
+                    <h2 class="section-title">Education & Experience</h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="timeline-dual-grid">
+                    <!-- Education Column -->
+                    <div class="timeline-column">
+                        <h3 class="timeline-column-title"><i data-lucide="book-open"></i> Education</h3>
+                        <div class="timeline-wrapper">
+                            
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content-card">
+                                    <span class="timeline-date">2025 – 2029</span>
+                                    <h4 class="timeline-card-title">BS Cybersecurity</h4>
+                                    <h5 class="timeline-card-subtitle">University of Engineering & Technology Lahore</h5>
+                                    <p class="timeline-card-detail">Currently enrolled in the **2nd Semester**, focusing on advanced networking, discrete mathematics, OOP structures, and foundational cyber defence modules.</p>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content-card">
+                                    <span class="timeline-date">Completed (Private Candidate)</span>
+                                    <h4 class="timeline-card-title">A Levels</h4>
+                                    <h5 class="timeline-card-subtitle">LGS Paragon</h5>
+                                    <p class="timeline-card-detail">Subjects: **Physics, Chemistry, Mathematics**.</p>
+                                    <div class="timeline-badge-award"><i data-lucide="sparkles"></i> Awarded 100% Academic Merit Scholarship</div>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content-card">
+                                    <span class="timeline-date">Completed</span>
+                                    <h4 class="timeline-card-title">O Levels</h4>
+                                    <h5 class="timeline-card-subtitle">Pre-Medical Candidate</h5>
+                                    <p class="timeline-card-detail">Built strong foundation in scientific disciplines and analytical methodologies prior to shifting focus to technology and cybersecurity.</p>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+
+                    <!-- Experience Column -->
+                    <div class="timeline-column">
+                        <h3 class="timeline-column-title"><i data-lucide="briefcase"></i> Professional Experience</h3>
+                        <div class="timeline-wrapper">
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content-card">
+                                    <span class="timeline-date">2023 – 2025</span>
+                                    <h4 class="timeline-card-title">Social Media Manager</h4>
+                                    <h5 class="timeline-card-subtitle">Xtep Pakistan</h5>
+                                    <ul class="timeline-bullets">
+                                        <li>Managed social media platforms to maintain active and professional branding.</li>
+                                        <li>Planned and executed data-driven content strategies that increased online engagement.</li>
+                                        <li>Collaborated closely with marketing teams to synchronize digital campaigns with product launches.</li>
+                                        <li>Significantly improved online brand presence and customer interaction rates.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="timeline-item">
+                                <div class="timeline-marker"></div>
+                                <div class="timeline-content-card">
+                                    <span class="timeline-date">2023 – 2025</span>
+                                    <h4 class="timeline-card-title">Assistant Sales Representative</h4>
+                                    <h5 class="timeline-card-subtitle">Faber Kitchen</h5>
+                                    <ul class="timeline-bullets">
+                                        <li>Conducted professional client consultations to determine specific appliance and kitchen requirements.</li>
+                                        <li>Provided live technical and product demonstrations to facilitate customer decision-making.</li>
+                                        <li>Managed daily point-of-sale (POS) operations and sales documentation with high accuracy.</li>
+                                        <li>Maintained excellent relationship management, contributing to high rates of repeat clients.</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">04 // Creations</span>
+                    <h2 class="section-title">Featured Projects</h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <!-- Filter Navigation -->
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All Projects</button>
+                    <button class="filter-btn" data-filter="java">Java</button>
+                    <button class="filter-btn" data-filter="python">Python</button>
+                    <button class="filter-btn" data-filter="security">Security</button>
+                </div>
+
+                <div class="projects-grid" id="projects-grid">
+                    
+                    <!-- Project 1: Pacman Game -->
+                    <div class="project-card" data-category="java">
+                        <div class="project-image-container">
+                            <div class="project-image-placeholder java-grad">
+                                <i data-lucide="gamepad-2" class="project-icon"></i>
+                                <span class="placeholder-text">PACMAN GAME</span>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">OOP</span>
+                                <span class="tech-tag">CLI Graphics</span>
+                            </div>
+                            <h3 class="project-title">Console-Based Pacman Game</h3>
+                            <p class="project-desc">
+                                A logic-heavy console implementation of Pacman utilizing strict Object-Oriented Design principles. Features pathfinding algorithms for ghosts, score trackers, and custom command-line frame drawing.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/ansaismail" target="_blank" rel="noopener noreferrer" class="proj-link github-link"><i data-lucide="github"></i> Code</a>
+                                <a href="#" class="proj-link demo-link disabled"><i data-lucide="external-link"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 2: Job Tracker -->
+                    <div class="project-card" data-category="java">
+                        <div class="project-image-container">
+                            <div class="project-image-placeholder mysql-grad">
+                                <i data-lucide="database" class="project-icon"></i>
+                                <span class="placeholder-text">JOB TRACKER</span>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Java</span>
+                                <span class="tech-tag">MySQL</span>
+                                <span class="tech-tag">JDBC</span>
+                            </div>
+                            <h3 class="project-title">Job Application Tracker</h3>
+                            <p class="project-desc">
+                                A database-driven management utility allowing users to track job applications. Implements secure CRUD operations, database integration with clean SQL query optimization, search filters, and application status analytics.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/ansaismail" target="_blank" rel="noopener noreferrer" class="proj-link github-link"><i data-lucide="github"></i> Code</a>
+                                <a href="#" class="proj-link demo-link disabled"><i data-lucide="external-link"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 3: Cipher Encryptor -->
+                    <div class="project-card" data-category="python security">
+                        <div class="project-image-container">
+                            <div class="project-image-placeholder py-grad">
+                                <i data-lucide="key-round" class="project-icon"></i>
+                                <span class="placeholder-text">CIPHER SYSTEM</span>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">Cryptography</span>
+                                <span class="tech-tag">GUI / CLI</span>
+                            </div>
+                            <h3 class="project-title">Cipher Encryptor & Decryptor</h3>
+                            <p class="project-desc">
+                                Secure text conversion application implementing classic and modern symmetric key encryption models. Allows users to securely mask text payloads, generate keys, and perform robust deciphering operations.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/ansaismail" target="_blank" rel="noopener noreferrer" class="proj-link github-link"><i data-lucide="github"></i> Code</a>
+                                <a href="#" class="proj-link demo-link disabled"><i data-lucide="external-link"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Project 4: Password Strength Checker -->
+                    <div class="project-card" data-category="python security">
+                        <div class="project-image-container">
+                            <div class="project-image-placeholder sec-grad">
+                                <i data-lucide="lock" class="project-icon"></i>
+                                <span class="placeholder-text">PASSWORD ANALYZER</span>
+                            </div>
+                        </div>
+                        <div class="project-details">
+                            <div class="project-tech-tags">
+                                <span class="tech-tag">Python</span>
+                                <span class="tech-tag">RegEx</span>
+                                <span class="tech-tag">Security Logic</span>
+                            </div>
+                            <h3 class="project-title">Password Strength Checker</h3>
+                            <p class="project-desc">
+                                Real-time password evaluation script that scores strings against complexity criteria (entropy, length, character diversity). Provides localized security advice, checking for common dictionary matches.
+                            </p>
+                            <div class="project-links">
+                                <a href="https://github.com/ansaismail" target="_blank" rel="noopener noreferrer" class="proj-link github-link"><i data-lucide="github"></i> Code</a>
+                                <a href="#" class="proj-link demo-link disabled"><i data-lucide="external-link"></i> Live Demo</a>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Achievements Section -->
+        <section id="achievements" class="achievements-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">05 // Milestones</span>
+                    <h2 class="section-title">Key Achievements</h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="achievements-grid">
+                    <div class="achievement-card">
+                        <div class="ach-icon"><i data-lucide="award"></i></div>
+                        <h3 class="ach-title">100% A-Level Scholarship</h3>
+                        <p class="ach-desc">Awarded full academic merit scholarship at LGS Paragon, highlighting persistent academic excellence and cognitive aptitude.</p>
+                    </div>
+                    
+                    <div class="achievement-card">
+                        <div class="ach-icon"><i data-lucide="shield-alert"></i></div>
+                        <h3 class="ach-title">Equity Head – Paraknight</h3>
+                        <p class="ach-desc">Led initiative policies promoting equity, student integration, and structured peer-led events within the community.</p>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="ach-icon"><i data-lucide="camera"></i></div>
+                        <h3 class="ach-title">Photography Management Team</h3>
+                        <p class="ach-desc">Coordinated visual coverages, event asset creations, and managed operations for prominent institutional activities.</p>
+                    </div>
+
+                    <div class="achievement-card">
+                        <div class="ach-icon"><i data-lucide="code-2"></i></div>
+                        <h3 class="ach-title">Software Implementations</h3>
+                        <p class="ach-desc">Successfully conceptualized, modeled, and developed multiple console and GUI applications across Java, Python, and SQL.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Career Goals Section -->
+        <section id="goals" class="goals-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">06 // Vision</span>
+                    <h2 class="section-title">Career Directions</h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="goals-content">
+                    <p class="goals-lead-text">
+                        As a specialized Cybersecurity student, I aim to develop deep domain mastery across offensive, defensive, and secure development tracks. I am targeting roles that leverage code safety and technical defense structures.
+                    </p>
+                    
+                    <div class="goals-grid">
+                        <div class="goal-item-card">
+                            <div class="goal-icon-box"><i data-lucide="line-chart"></i></div>
+                            <h4>Security Analysis</h4>
+                            <p>Analyzing telemetry logs, monitoring active infrastructures, and managing incident triage systems to mitigate incoming threat profiles.</p>
+                        </div>
+                        <div class="goal-item-card">
+                            <div class="goal-icon-box"><i data-lucide="swords"></i></div>
+                            <h4>Penetration Testing</h4>
+                            <p>Proactively uncovering network vulnerabilities, conducting structural threat modeling, and performing authorized offensive audits.</p>
+                        </div>
+                        <div class="goal-item-card">
+                            <div class="goal-icon-box"><i data-lucide="eye"></i></div>
+                            <h4>Threat Intelligence</h4>
+                            <p>Tracking Advanced Persistent Threats (APTs), deciphering adversary techniques, and formulating strategic indicators of compromise.</p>
+                        </div>
+                        <div class="goal-item-card">
+                            <div class="goal-icon-box"><i data-lucide="shield-check"></i></div>
+                            <h4>Secure Development</h4>
+                            <p>Embedding security early in the SDLC (DevSecOps) through secure coding practices, vulnerability scanning, and binary auditing.</p>
+                        </div>
+                        <div class="goal-item-card">
+                            <div class="goal-icon-box"><i data-lucide="cloud"></i></div>
+                            <h4>Cloud Security</h4>
+                            <p>Securing microservices, configuring AWS/Azure IAM parameters, and establishing zero-trust container environments.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="certifications-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">07 // Endorsements</span>
+                    <h2 class="section-title">Certifications & Training</h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="certifications-grid">
+                    
+                    <div class="cert-card coming-soon">
+                        <div class="cert-status">Coming Soon</div>
+                        <div class="cert-icon-wrap"><i data-lucide="shield-check"></i></div>
+                        <h4 class="cert-title">Google Cybersecurity</h4>
+                        <p class="cert-issuer">Google Professional Certificate</p>
+                    </div>
+
+                    <div class="cert-card coming-soon">
+                        <div class="cert-status">Coming Soon</div>
+                        <div class="cert-icon-wrap"><i data-lucide="file-check"></i></div>
+                        <h4 class="cert-title">CompTIA Security+</h4>
+                        <p class="cert-issuer">CompTIA</p>
+                    </div>
+
+                    <div class="cert-card coming-soon">
+                        <div class="cert-status">Coming Soon</div>
+                        <div class="cert-icon-wrap"><i data-lucide="skull"></i></div>
+                        <h4 class="cert-title">CEH (Ethical Hacker)</h4>
+                        <p class="cert-issuer">EC-Council</p>
+                    </div>
+
+                    <div class="cert-card coming-soon">
+                        <div class="cert-status">Coming Soon</div>
+                        <div class="cert-icon-wrap"><i data-lucide="network"></i></div>
+                        <h4 class="cert-title">Cisco CCNA</h4>
+                        <p class="cert-issuer">Cisco Systems</p>
+                    </div>
+
+                    <div class="cert-card coming-soon">
+                        <div class="cert-status">Coming Soon</div>
+                        <div class="cert-icon-wrap"><i data-lucide="swords"></i></div>
+                        <h4 class="cert-title">TryHackMe Profile</h4>
+                        <p class="cert-issuer">Offensive & Defensive Practice</p>
+                    </div>
+
+                    <div class="cert-card coming-soon">
+                        <div class="cert-status">Coming Soon</div>
+                        <div class="cert-icon-wrap"><i data-lucide="box"></i></div>
+                        <h4 class="cert-title">Hack The Box</h4>
+                        <p class="cert-issuer">Active Labs & Pro Labs</p>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <span class="section-tag">08 // Connection</span>
+                    <h2 class="section-title">Contact Me</h2>
+                    <div class="title-line"></div>
+                </div>
+
+                <div class="contact-grid">
+                    <!-- Info Panel -->
+                    <div class="contact-info-panel">
+                        <h3>Let's Collaborate</h3>
+                        <p class="contact-lead">
+                            I am open to discuss internships, cybersecurity opportunities, freelance project work, or academic collaborations. Reach out to me via email or connect with me on professional networks.
+                        </p>
+
+                        <div class="contact-details-list">
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i data-lucide="mail"></i></div>
+                                <div class="detail-content">
+                                    <span class="detail-label">Email</span>
+                                    <a href="mailto:ansaismail00@gmail.com" class="detail-value">ansaismail00@gmail.com</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i data-lucide="linkedin"></i></div>
+                                <div class="detail-content">
+                                    <span class="detail-label">LinkedIn</span>
+                                    <a href="https://linkedin.com/in/ansa-i-ba066624b?utm_source=share_via&utm_content=profile&utm_medium=member_android" target="_blank" rel="noopener noreferrer" class="detail-value">linkedin.com/in/ansa-i-ba066624b</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i data-lucide="github"></i></div>
+                                <div class="detail-content">
+                                    <span class="detail-label">GitHub</span>
+                                    <a href="https://github.com/ansaismail" target="_blank" rel="noopener noreferrer" class="detail-value">github.com/ansaismail</a>
+                                </div>
+                            </div>
+                            <div class="contact-detail-item">
+                                <div class="detail-icon"><i data-lucide="map-pin"></i></div>
+                                <div class="detail-content">
+                                    <span class="detail-label">Location</span>
+                                    <span class="detail-value">Lahore, Pakistan</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Form Panel -->
+                    <div class="contact-form-panel">
+                        <form id="contact-form" class="cyber-form">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="form-name">Name</label>
+                                    <input type="text" id="form-name" required placeholder="John Doe">
+                                </div>
+                                <div class="form-group">
+                                    <label for="form-email">Email</label>
+                                    <input type="email" id="form-email" required placeholder="john@example.com">
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="form-subject">Subject</label>
+                                    <input type="text" id="form-subject" required placeholder="Opportunity / Consultation">
+                            </div>
+                            <div class="form-group">
+                                <label for="form-message">Message</label>
+                                <textarea id="form-message" rows="5" required placeholder="Type your message details..."></textarea>
+                            </div>
+                            
+                            <button type="submit" class="btn btn-submit" id="submit-btn">
+                                <span class="submit-text"><i data-lucide="send"></i> Send Transmission</span>
+                                <span class="loading-spinner hidden"></span>
+                            </button>
+                            <div class="form-status-message hidden" id="form-status"></div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="cyber-footer">
+        <div class="container footer-container">
+            <div class="footer-left">
+                <p>&copy; 2026 Ansa Ismail. All rights reserved.</p>
+            </div>
+            <div class="footer-center">
+                <span class="footer-dev-tag">Designed & Developed by Ansa Ismail</span>
+            </div>
+            <div class="footer-right">
+                <div class="footer-links">
+                    <a href="#about">About</a>
+                    <a href="#skills">Skills</a>
+                    <a href="#projects">Projects</a>
+                    <a href="#contact">Contact</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="js/app.js"></script>
+</body>
+</html>
